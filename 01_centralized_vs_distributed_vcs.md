@@ -16,3 +16,4 @@
 - when you initialize your empty repo take a look what is inside of .git dir `find .` to list all files
 - all versions of HEAD are -> HEAD, ORIGIN_HEAD, MERGE_HEAD, FETCH_HEAD => command to manage is `git symbolic-ref HEAD` - deals with named references (branches, HEAD)
 - `git rev-parse <name>` resolves anything - a name, tag, reference, result is sha 
+- go to [Git installation](02_git_installation.md)
