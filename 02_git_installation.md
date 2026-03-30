@@ -8,3 +8,4 @@
 - this is a good time to pick a place on your hard drive for storing your repositories
 - many folks choose something like `user/Documents/projects`,`user/projects` or whatever you like, but the idea to keep everything organized will pay off long term
 - and if you skipped the [history of Git and centralized vs distributed VCS](01_centralized_vs_distributed_vcs.md) and still interested
+- lets go to the interesting stuff of [Git configuration](03_configuration.md)

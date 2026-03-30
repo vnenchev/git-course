@@ -1,0 +1,28 @@
+- System level applies to every user of the system, user level configuration applies to a single user a computer, project level(local) unique to each project inside `.git` folder of the repository
+- system can be edited with `git config --system <options here>`, user level is surprisingly named --global so you use `git config --global <options here>` and finally local or project level `git config <options here>`
+- project level will overwrite global and system
+    - system level => `git config --system` system level is the machine itself, machine has many users and this is the highest level so easily can be overwritten
+    - user level => `git config --global` this is your user level one user has many repos, config file in your home ~/ directory
+    - project level(local) => `git config` this is project / repo level config so it is valid only for current repo but the lowest level overwrites everything else, there is still possibility that your contributors don't need this file for their environment so can be ignored or else for remote repo
+- git configuration initial `--system for system level`, `--global` for user level, no option project level
+- `git config --global user.name "your name"` - set your name
+- `git config --global user.email "some@mail.com"` - set your email / can be made invisible on Github to prevent spamming
+- `git config --global color.ui true` - i am not 100% sure for this one, in newer version tends to be turned on by default
+- `git config --global init.defaultBranch main` # other options `main, master, trunk, development`, depends on the name nomenclature you use
+- to remove a setting use `git config --unset --global user.email`
+- if you forget to set your name from master => main, because you have no remote you can rename it now before remote pushing `git branch -m master main`
+- list all configured options with `git config --list`
+- config your text editor - `git config --global core.editor "code --wait"` wait for edit and exit
+- add files `git add .` adds everything in your present working directory(very Unixy stuff) / `git add filename.ext` to add individual filenames if you want to separate and organize your commit
+- file locations for different level of configs:
+    - system => `C:\Program Files\Git\etc\.gitconfig`
+    - global => `C:\Users\your_user\.gitconfig`
+    - project level => `repo_folder/.git/config` check with `cat .git/config`
+- BEWARE that the precedence is project level => global level => system level, whatever comes later wins, just think like an SSH wizard and you've got this
+- `cat ~/.gitconfig` will show you configured options, this is for the global/user level
+- so project level overwrites anything else
+- to clear the screen use `clear` command or use `ctrl + L` this will save you some real estate
+- to spare yourself some typing and be in general more faster you can use aliases 
+- example how to create ALIAS `git config --global alias.s3 'log --oneline --graph --all --decorate'` - for global level, colored and structured graph, accessible by typing `git s3`
+- now as you have some aliases lets see them `git config --list | grep alias`
+- you want to delete some of your aliases `git config --global --unset alias.s3`
