@@ -1,4 +1,4 @@
-# Git installation
+# 2 Git installation
 
 - https://git-scm.com - go to download page, check the version for your os (x64, arm64, portable_thumbdrive edition)
 - after installation you can check on cli what version do you use and if it is ok `git --version`

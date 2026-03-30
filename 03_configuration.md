@@ -1,3 +1,4 @@
+# 3 Git configuration
 - System level applies to every user of the system, user level configuration applies to a single user a computer, project level(local) unique to each project inside `.git` folder of the repository
 - system can be edited with `git config --system <options here>`, user level is surprisingly named --global so you use `git config --global <options here>` and finally local or project level `git config <options here>`
 - project level will overwrite global and system

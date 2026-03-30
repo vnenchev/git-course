@@ -1,4 +1,4 @@
-# Centralized versus distributes version control system
+# 1 Centralized versus distributes version control system
 
 - history of vsc starts with different version of files (file_v1.txt,file_v1_1.txt), word processors track changes, even undo is a type of version control
 - first version control systems - SCCS(1972) -> RCS(1982) -> CVS(1986) -> SVN(2000) -> GIT(2005) -> our friend GitHub(2008)
