@@ -1,0 +1,11 @@
+# 15 Move and rename files
+- moving and renaming in Git are similar operations
+- `mv data.xlsx general/data.xlsx` - this is moving
+- `mv data.xlsx general.xlsx` - this is renaming
+- there are 2 techniques for moving and renaming files
+    - first method is to go into your working folder and rename your file manually - now you have `deleted, untracked`
+    - `git add first_file.txt` now Git recognize that files are related and show `renamed`
+- second way is to use Git to move or rename file `git mv second_file.txt secondary_file.txt`
+    - `git mv third_file.txt subdirectory/third_file.txt` - file is designated after that as renamed
+- so moving and renaming work the same way
+- command dump here from chapter `git add . / git restore --cached / git commit -m "Message" / git commit -a / git diff / git diff --cached / git rm / git mv`
