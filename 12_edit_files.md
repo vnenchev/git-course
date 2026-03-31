@@ -7,4 +7,3 @@
 - you can commit even if there is still untracked and modified files, they will wait there until an action is taken
 - to remove your changes from a file in the working directory use `git restore <file>`
 - staged files are typically in green, file in the working directory which are modified are typically red
-- 

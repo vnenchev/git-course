@@ -8,4 +8,4 @@
 - for a given command on Windows try `git help log` and also `git log --help` open the web version of the man page for reference 
 - also try what auto completion of commands does for you
 - on Linux check also the man pages directly with `man git-commit` - as you can see the format is a bit different, other combos include `git-log, git-commit, git-branch, git-rebase`
-- for the record `git log -h` gives an error
+- for the record `git log -h` gives an error especially on Windows

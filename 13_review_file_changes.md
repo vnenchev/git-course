@@ -1,1 +1,24 @@
 # 13 Review file changes
+- add some more information to be able to see the text changes later
+- `git diff` works only for tracked files, for untracked you don't have a git way to see the changes
+- to see the differences you type `git diff`
+- file A is the file in our Repo and Staging trees 
+- file B is in our Working directory 
+- A file is before the edit 
+- B file is after the edit
+- with `-` minus sign removed lines are designated
+- with `+` plus sign added lines are designated
+- you will notice that even edited lines are shown as removed and added
+- look for the blue text before the changed lines
+- `@@ -1 +1,4 @@` - what files are shown 
+- here -1 line one before the change 
+- here +1 line one after the change 
+- after that you have the number +1,4 which means that the chunk starts at line one and spans four lines
+- `diff` usually shows only excerpts if changes very long
+- by default `git diff` shows the **differences between the staging tree and the working tree**
+- to see differences between repository/last commit/ and staging `git diff --staged`, --cached also available
+- so again if you type `git diff` you see the difference between working and staging
+- `git diff` works for tracked files, for untracked there is no information to do diff
+- @@-1 +1,4@@ - means line one before before the change, after the change counting from line one, chunk is four lines long
+- so first number WHAT IS THE NUMBER OF THE FIRST CHANGED LINE
+- second number HOW LONG IS THE CHUNK
