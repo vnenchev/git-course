@@ -16,3 +16,6 @@
 - [11 - Add files](notes/11_add_files.md)
 - [12 - Edit files](notes/12_edit_files.md)
 - [13 - Review file changes](notes/13_review_file_changes.md)
+- [14 - Delete files](notes/14_delete_files.md)
+- [15 - Move and rename files](notes/15_move_and_rename_files.md)
+- [16 - Add your project](notes/16_add_your_project.md)
