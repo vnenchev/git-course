@@ -1,0 +1,12 @@
+# 6 First commit
+- `git status` to see the status of working directory, for newly created repos it is normal to say `nothing to commit, working tree clean`
+- to create an empty file quickly you can use `touch test.file` to have something to work with
+- perform again `git status` you see that there are changes to the working directory displayed in red, furthermore the file is also untracked, which means Git has no information about this file
+- to add the file to the version control you need to add it to staging area and after that commit it
+- `git add test.file` to add the file to the staging area
+- `git commit -m "my message here"` this is the standard way of doing it
+- if the file that has changes is already tracked you can use shortcut `git commit -am "your message here"` here -a saves you from `git add .` so it becomes one stage process
+- you can also start the commit procedure by typing only `git commit` and whatever editor is set as default will open and wait for commit message, which is very useful at least in VS Code
+- you make changes => add the changes to a set => you commit - this is the workflow in GIT
+- your three places are WORKING DIRECTORY => STAGING AREA => REPOSITORY
+- staging area is just a stage where you prepare your commit before going to the repo
