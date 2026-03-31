@@ -1,0 +1,14 @@
+# 11 Add files
+- `git status` nothing to commit, drag files, now you have untracked files
+- `git add .` adds all from the current directory
+- you can also `git add <individual_file>`
+- `git add -u` adds all files but don't add untracked
+- what is untracked file, a file new to the version control that has no information in the version control database yet
+- `git restore --staged <file>` to unstage the file
+  - old alternate way for this is `git reset HEAD <file>`
+- `git restore <file>` to remove changes from the working directory
+  - old alternate way for this is `git checkout HEAD <file>`
+- if you have untracked files and want to delete them use `git clean -n` to see what will be deleted, and `git clean -f` to delete the untracked files 
+- after staging `git commit -m <filename>` to commit
+- restore from another branch => `git checkout <branch> -- <file>`
+- see info about staged file `git ls-files --stage`
