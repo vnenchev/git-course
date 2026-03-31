@@ -1,0 +1,11 @@
+# 4 Getting help
+- there are several ways to get help in Git each with its own sides
+- `git help` will load a screen of the most used commands in git, as this is general help there are two options you need to be aware
+  - option 1: `git help -a` will give you a comprehensive list of option hence -a option
+  - option 2: `git help -g` -g is from guide and will present a list of different topical guides
+- when you need something more "robust and precise" (John Wick) you will use `git help <command>` like `git help log`
+- the help system is context aware so for example if you type `git help a` even with only one letter you will get each command starting with letter 'a'
+- for a given command on Windows try `git help log` and also `git log --help` open the web version of the man page for reference 
+- also try what auto completion of commands does for you
+- on Linux check also the man pages directly with `man git-commit` - as you can see the format is a bit different, other combos include `git-log, git-commit, git-branch, git-rebase`
+- for the record `git log -h` gives an error
