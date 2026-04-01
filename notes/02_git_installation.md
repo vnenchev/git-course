@@ -1,6 +1,6 @@
 # 2 Git installation
 <!-- ![Where to download Git](../gifs/where_to_download_git.gif) -->
-<div><img src="../gifs/where_to_download_git.gif" width=350 alt="where to download git">
+<div align="center"><img src="../gifs/where_to_download_git.gif" width=350 alt="where to download git">
 <div>
 
 - https://git-scm.com - go to download page, check the version for your os (x64, arm64, portable_thumbdrive edition)
