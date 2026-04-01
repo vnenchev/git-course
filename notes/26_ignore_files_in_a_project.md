@@ -1,0 +1,47 @@
+# 26 Ignore files in a project
+
+- those are files that you need in your project but you don't want them tracked in VCS
+- very often this are specific files from your OS or IDE that change very often and are just needed for the project locally - think of log files for example
+- BEWARE THAT WHEN YOU IGNORE A DIRECTORY YOU IGNORE ALL FILES AND SUBDIRECTORIES INSIDE OF IT
+- see more templates at [github ignore template](https://www.github.com/github/gitignore/blob/main)
+- `.gitignore` in the file repository top level of your repository
+- from the moment you add .gitignore to your root folder it starts ignoring files and you don't see them included in any changes even if modified
+    - to ignore exact file type the name like `DS_Store` written like this it is ignored regardless of position in the project
+    - ignore all files in a directory with a trailing slash `/assets/videos/`
+    - file patterns:
+    - `/` - directory separator => beware that /dir ignores dir at root level and everything inside of it
+    - `dir` - the dir is ignored at any level in the repository
+    - `**` - all directories or files inside a directory => `**/log` ignore log dir at any level and everything inside it
+    - `*` any characters besides `/`
+    - `?` any one character besides `/`
+    - `[aeiou]` or `[0-9]` - character in a set of characters
+    - `!` negative expression says DONT IGNORE, useful after a positive ignore pattern
+    - `#` - this is for a comment in your gitignore file
+    - blank lines are always skipped
+    - useful when preceded by positive expression to not ignore too much
+- `git help gitignore` - useful help page
+- `.gitignore` in your repo ignores only the files in that repo
+- `**/dir` ignore dir at any level in the project regardless of the depth
+- `dir/**` ignores everything in dir directory regardless of the depth
+- `*.txt` all \*.txt files regardless of their position in the project
+- `**/*.txt` all \*.txt files in all folders
+- `docs/*` files directly inside docs/
+- `docs/**` everything inside docs/ recursively including directories
+- `dir/ any directory named dir anywhere in the project`
+- `/dir/` - only the dir directory at the project root
+- `/dir` no trailing slash, any file/directory dir at the root level
+- contains a list of file names or patterns
+- for help on this refer to `git help gitignore`
+- file patterns:
+    - `/database/**/nightly_backup.sql`
+    - `*.zip`
+    - `/project_logs/*.log`
+    - ! - negates the expression => /searchindex/\* && !/searchindex/config.yml => ignore everything but config.yml
+    - `#` this is a comment // blank lines are always skipped
+- the moment you put your .gitignore file it takes effect
+- to check what is ignored use => `git check-ignore -v path/to/htmldocs/` as example -v is for verbose
+- other way to check ignore `git status --ignored` , `git ls-files --ignored --others --exclude-standard`
+- each directory can contain .gitignore file and the closest to the source the ignore file is, the bigger precedence it has
+- if you want to have ignore file which is not copied for the clones you made or your contributors look for `.git/info/exclude`
+- beware that exclude file can contain the same syntax for ignoring files as .gitignore file, it is made for your personal usage
+- put first your rules for ignoring files and after that put the rules for excluding file with `! rules`
