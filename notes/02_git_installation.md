@@ -1,5 +1,5 @@
 # 2 Git installation
-
+![Where to download Git](gifs/where_to_download_git.gif)
 - https://git-scm.com - go to download page, check the version for your os (x64, arm64, portable_thumbdrive edition)
 - after installation you can check on cli what version do you use and if it is ok `git --version`
 - if you want to make `git bash` your default terminal `"terminal.integrated.defaultProfile.windows": "Git Bash"` this line goes to `ctrl+shift+p` search for "User settings JSON", click on it and add the line
