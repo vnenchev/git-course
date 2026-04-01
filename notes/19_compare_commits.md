@@ -1,0 +1,23 @@
+# 19 Compare commits
+
+- in order to compare commits you need their SHA's
+- to get a short version of the log use `git log --oneline`
+- when you compare you can compare old version to new or new version to old, so the order matters here
+- be vigilant what you compare to what and if the changes are marked as deleted or added, this will show you what is going on
+- show last edit `git show abc123`, but it is limited to single commit, here the `HEAD` pointer is assumed like `abc123..HEAD` you can also use three periods `...`
+- show differences between two commits OLDER LISTED AS FIRST ARGUMENT `git diff 456def abc123`
+- `git diff ddd123 abc123` - you can view differences between any commits you like even on different branches
+- first have the SHA, `git log --oneline` as a convenient list and pick from it
+- if you want to view the CHANGES FOR A SINGLE FILE ONLY for example use `git diff abc1234 456def -- index.html`
+- for git `--` tells that a file path is following and not command option
+- this way you will see the differences only for this file
+- summary of all the changes `git diff --stat abc123 456def`, you see a full picture of what amount is changes between the two commits
+- `git diff -w first_branch second_branch` ignore white space when comparing
+- `git diff` compares the working directory with the staging area/ index
+- `git diff abc123 <implied HEAD here>` compares working directory with this commit, if omitted defaults to HEAD
+- `git diff --cached abc123` compares staging index with this commit
+- useful options for git diff command are:
+    - `--M`, `-w` / `--ignore-all-space`
+    - `-- stat` - just the big picture
+    - `--color` 
+- search for string in last 50 commits `git diff -S"octopus" master~50`
