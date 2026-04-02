@@ -36,7 +36,7 @@
     - `/database/**/nightly_backup.sql`
     - `*.zip`
     - `/project_logs/*.log`
-    - ! - negates the expression => /searchindex/\* && !/searchindex/config.yml => ignore everything but config.yml
+    - ! - negates the expression => `/searchindex/*` && `!/searchindex/config.yml` => ignore everything but config.yml
     - `#` this is a comment // blank lines are always skipped
 - the moment you put your .gitignore file it takes effect
 - to check what is ignored use => `git check-ignore -v path/to/htmldocs/` as example -v is for verbose
