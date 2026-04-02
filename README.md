@@ -33,3 +33,8 @@
 </details>
 
 - [16 - Add your project](notes/16_add_your_project.md)
+- [17 - Make and review edits](notes/17_make_and_review_edits.md)
+- [18 - Add, delete and rename files](notes/17_make_and_review_edits.md)
+- [19 - Compare commits](notes/19_compare_commits.md)
+- [20 - Atomic commits](notes/20_atomic_commits.md)
+- [21 - Restore changes to previous version](notes/21_restore_changes_to_previous_version.md)
