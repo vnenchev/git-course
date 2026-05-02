@@ -1,0 +1,15 @@
+# 66 Work with new remote branches
+- frequently one of your collaborators will create a new branch and push it to the remote
+- we need how to download and work with that branch
+- branch in remote repository but not in your local repository just use `git fetch` to retrieve branch and commits
+- then you can simply create a new branch
+- use the remote-tracking branch as the source for your new branch
+- `git branch <name> <source>` => `git branch feature origin/feature`
+    - exmaple: `git branch character_reorder reset` create character_reorder use reset branch as a source
+    - push the newly created branch `git push -u origin character_reorder`
+    - no to to your collaborator repository
+    - `git branch -a` the newly created branch is still not visible, you need `git fetch`
+    - you can't change remote tracking branch because it is read only
+    - git branch character_reorder origin/character_reorder
+- switch command works the same way `git switch -c <name> <source>` => `git switch -c feature origin/feature`
+- the above switch and create the branch in one step
