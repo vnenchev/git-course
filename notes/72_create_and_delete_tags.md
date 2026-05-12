@@ -1,0 +1,19 @@
+# 72 Create and delete tags
+- tags allow marking points in history as important
+- a named reference to a commit
+- mark software release versions (v1.0, v1.1, v2.0)
+- mark key features or changes
+- mark points for discussions (bug, issue_136)
+- we can create two types of tags:
+    - `git tag issue_136 655da716` - lightweight tag, now you can use `issue_136` as reference to the SHA
+    - lightweight tags are like bookmarks or alias, they are meant for temporary object labels or for private development
+    - you can also add annotated tags that include short description `git tag -a v1.0 dd5c4942`
+    - annotated tags are intended for long time use and sharing with general public
+    - `git tag -am "Version 1.0" v1.0 dd5c4942` also adds a description inline
+- deleting tags: `git tag -d v1.0` it will delete the tag but the commit will remain untouched
+- when you perform git log you see the tag near the head references
+- example: `git tag -am "version 1.0" v1.0 HEAD^` tagging the commit before the HEAD
+- example: `git tag now` it will use by default the HEAD pointer, here now is just a sample name
+- example `git tag -d now` delete the now tag
+- to create tag `git tag -m 'v1.0' v1.0 ed44aea` and to show the SHA for tag use `git reverse-parse v1.0`
+- for even more detailed info use `git cat-file -p ed44aea` now you have more information -p stands for patch
