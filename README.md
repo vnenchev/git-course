@@ -29,9 +29,6 @@
 - [13 - Review file changes](notes/13_review_file_changes.md)
 - [14 - Delete files](notes/14_delete_files.md)
 - [15 - Move and rename files](notes/15_move_and_rename_files.md)
-
-</details>
-
 - [16 - Add your project](notes/16_add_your_project.md)
 - [17 - Make and review edits](notes/17_make_and_review_edits.md)
 - [18 - Add, delete and rename files](notes/18_add_delete_rename_files.md)
@@ -44,7 +41,7 @@
 - [25 - Remove untracked files](notes/25_remove_untracked_files.md)
 - [26 - Ignore files in a project](notes/26_ignore_files_in_a_project.md)
 - [27 - Ideas what to ignore](notes/27_ideas_what_to_ignore.md)
-
+</details>
 <details open>
 
 <summary>📁 Ignoring files</summary>
