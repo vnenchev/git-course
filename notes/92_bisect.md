@@ -1,0 +1,23 @@
+# 92 Bisect
+
+- another debugging tool, find the commit that introduced a change or a bug
+- we have a change now that we want to find at what time in past was introduced
+- mark last good revision and first bad revision
+- reset code to midpoint so you have both versions and decide for yourself
+- you give one good point and one bad point and the bisect tool finds the middle ground
+- you cut the path to the good commit in half until you find your good commit
+- it does hard reset to the commit in the middle and pause for you to inspect it
+- `git bisect start` start the process
+- `git bisect good SHA` , `git bisect bad SHA` mark your both points
+- `git bisect reset` if you want to cancel out
+- `git log --reverse` to see commits in reverse order
+- there is also `git bisect replay` if you get lost in the process and want to start over
+- here the process starts:
+    - `git bisect start`
+    - `git status`
+    - `git bisect good <initial_commit>` , `git bisect bad HEAD` => this is the entire history for main
+    - now we go and look in the commit which is the mid point whether the change we look for is there or not
+    - we find our change so sucessful => `git bisect good`
+    - you repeat with `git bisect good` , `git bisect bad` until you find your change
+    - our working directory is in the state when this commit was made, see the changes with `git show HEAD`
+    - if we need to go out of bisect `git bisect reset
