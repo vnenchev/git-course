@@ -32,23 +32,36 @@
 
 </details>
 
+<details open>
+
+<summary>📁 Hands-on project</summary>
+
 - [16 - Add your project](notes/16_add_your_project.md)
 - [17 - Make and review edits](notes/17_make_and_review_edits.md)
 - [18 - Add, delete and rename files](notes/18_add_delete_rename_files.md)
 - [19 - Compare commits](notes/19_compare_commits.md)
 - [20 - Atomic commits](notes/20_atomic_commits.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Undoing changes</summary>
+
 - [21 - Restore changes to previous version](notes/21_restore_changes_to_previous_version.md)
 - [22 - Restore other versions](notes/22_restore_other_versions.md)
 - [23 - Amend commits](notes/23_amend_commits.md)
 - [24 - Revert commits](notes/24_revert_commit.md)
 - [25 - Remove untracked files](notes/25_remove_untracked_files.md)
-- [26 - Ignore files in a project](notes/26_ignore_files_in_a_project.md)
-- [27 - Ideas what to ignore](notes/27_ideas_what_to_ignore.md)
+
+</details>
 
 <details open>
 
 <summary>📁 Ignoring files</summary>
 
+- [26 - Ignore files in a project](notes/26_ignore_files_in_a_project.md)
+- [27 - Ideas what to ignore](notes/27_ideas_what_to_ignore.md)
 - [28 - Globally ignore files](notes/28_globally_ignore_files.md)
 - [29 - Track empty directories](notes/29_track_empty_directories.md)
 
