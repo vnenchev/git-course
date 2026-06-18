@@ -1,0 +1,26 @@
+# 87 Merging vs rebasing
+
+- both incorporate changes from one branch into another
+- similar ends, but the means are different
+- side effects are important to understand
+- Merging:
+    - adds a merge commit
+    - nondestructive commits stay exactly the same as the time they were first commited
+    - complete record of what happened and when
+    - logs can become cluttered and nonlinear
+- Rebasing:
+    - no additional commit
+    - destructive: SHA changes, commits are rewritten and old metadata is partly lost
+    - no longer a complete record of what happened and when
+    - logs are cleaner and more linear
+    - Thou shalt not rebase a public branch
+    - Rebase abandons existing, shared commits and creates new, similar commits instead
+    - collaborators would see project history vanish
+    - getting all collaborators back in sync can be a hassle
+    - rebase local or remote branches that you use exclusively
+- How to choose?:
+    - Merge to allow commits to stand out or to be clearly grouped
+    - Merge to bring large topic branches back to main
+    - Rebase to add minor commits in main to a topic branch
+    - Rebase to move commit from one branch to another
+    - Merge anytime the topic branch is already public and being used by others ( the golden rule or rebasing )

@@ -1,0 +1,42 @@
+# 99999 Internet stuff / work in progress
+- change the author and email and then change it for entire project history local and remote, before doing this execute `git config --global user.email <new_email>` / `git config --global user.name <new_name>` you are now ready to update local and then remote - `git rebase -r --root --exec "git commit --amend --no-edit --reset-author"` this is only local, now you need to update remote `git push --force`, it worked only for author and email
+- `git reflog`
+    - save information about: `clone`
+    - `remotes`
+    - creation of new commits
+    - changing or creation of branches
+    - rebase operations
+    - nullify operations
+    - reflog names can be used in any other hit command HEAD@{10}
+    - `git log 'HEAD@{10}'` references about the time
+    - reflog .git/logs
+    - stash .git/logs/refs
+- bare and non bare repository terms
+    - bare repository is the repository which serves as central server and contains only .git folder, you can't commit, add, or status, typical place is GitHub, GitLab
+    - non bare repository is your typical development repository
+    - check command `git ls-remote` 
+- connections to other repos
+    - local repo `/path/to/repo.git` 
+    - local place `file:///path/to/repo.git` 
+    - git protocols `git://example.com/path/to/repo.git` 
+    - git protocols `git://example.com/user/path/to/repo.git` 
+    - ssh path `ssh://user@example.com/[:port]/path/to/repo.git` 
+    - ssh path `ssh://user@example.com/user/path/to/repo.git` 
+    - scp style `user@example.com:/path/to/repo.git` 
+    - scp style `user@example.com:~user/path/to/repo.git` 
+    - http style `http://example.com/path/to/repo.git` 
+    - https style `https://example.com/path/to/repo.git` 
+    - rsync style `rsync://example.com/path/to/repo.git` 
+- Github part of Kolisnichenko book
+    - each project can be downloaded from Github using `github.com/techprepared/labwebsite + /zipball/main` you are presented with zip file of repo 
+- SSH creation for connection with GitHub
+    - `ssh-keygen -t rsa -b 4096 -C "up.step@protonmail.com"` mail can be noreply email from GitHub to take a look, pick the same email as the email you are using for GitHub
+    - on the prompt (git bash or else)
+        - eval "\$(ssh-agent -s)"
+        - ssh-add ~/.ssh/id_rsa
+            - on machine part everything is fine, your public key is `cat .ssh/id_rsa.pub` 
+            - put your public key in GitHub => settings => ssh and gpg
+            - for testing purposes put `ssh -T git@github.com` - tests your connection and terminates it immediately after message returned
+            - test to clone repo `git clone git@github.com:TheAlgorithms/Python.git pythontest/` just as example  
+                <br/>
+- to start GITK graphical user interface go to your repository from the shell and type `gitk`
