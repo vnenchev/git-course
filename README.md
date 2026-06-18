@@ -29,23 +29,39 @@
 - [13 - Review file changes](notes/13_review_file_changes.md)
 - [14 - Delete files](notes/14_delete_files.md)
 - [15 - Move and rename files](notes/15_move_and_rename_files.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Hands-on project</summary>
+
 - [16 - Add your project](notes/16_add_your_project.md)
 - [17 - Make and review edits](notes/17_make_and_review_edits.md)
 - [18 - Add, delete and rename files](notes/18_add_delete_rename_files.md)
 - [19 - Compare commits](notes/19_compare_commits.md)
 - [20 - Atomic commits](notes/20_atomic_commits.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Undoing changes</summary>
+
 - [21 - Restore changes to previous version](notes/21_restore_changes_to_previous_version.md)
 - [22 - Restore other versions](notes/22_restore_other_versions.md)
 - [23 - Amend commits](notes/23_amend_commits.md)
 - [24 - Revert commits](notes/24_revert_commit.md)
 - [25 - Remove untracked files](notes/25_remove_untracked_files.md)
-- [26 - Ignore files in a project](notes/26_ignore_files_in_a_project.md)
-- [27 - Ideas what to ignore](notes/27_ideas_what_to_ignore.md)
+
 </details>
+
 <details open>
 
 <summary>📁 Ignoring files</summary>
 
+- [26 - Ignore files in a project](notes/26_ignore_files_in_a_project.md)
+- [27 - Ideas what to ignore](notes/27_ideas_what_to_ignore.md)
 - [28 - Globally ignore files](notes/28_globally_ignore_files.md)
 - [29 - Track empty directories](notes/29_track_empty_directories.md)
 
@@ -163,5 +179,46 @@
 
 - [80 - Cherry picking commits](notes/80_cherry_picking_commits.md)
 - [81 - Resolve cherry picking commits](notes/81_resolve_cherry_picking_commits.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Patches</summary>
+
+- [82 - Create diff patches](notes/82_create_diff_patches.md)
+- [83 - Apply diff patches](notes/83_apply_diff_patches.md)
+- [84 - Create formatted patches](notes/84_create_formatted_patches.md)
+- [85 - Apply formatted patches](notes/85_apply_formatted_patches.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Rebasing</summary>
+
+- [86 - Rebase commits](notes/86_rebase_commits.md)
+- [87 - Merging vs rebasing](notes/87_merging_vs_rebasing.md)
+- [88 - Interactive rebasing](notes/88_interactive_rebasing.md)
+- [89 - Squash commits](notes/89_squash_commits.md)
+- [90 - Pull rebase](notes/90_pull_rebase.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Debugging</summary>
+
+- [91 - Blame](notes/91_blame.md)
+- [92 - Bisect](notes/92_bisect.md)
+- [93 - Track down problems](notes/93_track_down_problems.md)
+
+</details>
+
+<details open>
+
+<summary>📁 Resources</summary>
+
+- [Internet stuff](notes/99999_internet_stuff.md)
 
 </details>
